@@ -13,9 +13,9 @@ public class _Hooks {
         if (scenario.isFailed()){
             TakesScreenshot screenshot= (TakesScreenshot) GWD.getDriver();
             final byte[] scInMemory=screenshot.getScreenshotAs(OutputType.BYTES);
-            scenario.attach(scInMemory,"image/png","screenshot name");
+            scenario.attach(scInMemory,"image/png","screenshot");
         }
 
-        //GWD.quitDriver();
+        GWD.quitDriver();
     }
 }

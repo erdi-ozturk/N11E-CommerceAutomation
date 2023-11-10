@@ -1,4 +1,5 @@
 Feature: Login With Valid User
+  @SmokeTest
   Scenario: Login
     Given Navigate to N HomePage
     When Click Login Button
